@@ -1,0 +1,61 @@
+@import "helpers";
+
+// ==============================================
+// Website settings
+// ============================================== 
+
+@using-ieclasses: true;		// whether or not the markup has html5-boilerplate style IE classes in it or not
+@using-modernizr: false; 	// whether or not modernizer feature-detection classes are being used
+@disable-filters: true; 	// whether or not to disable MS-specific 'filter' properties (can make IE slow!)
+
+
+//----------------------------------------------------------------------------------------------------------------------
+// Colours
+//----------------------------------------------------------------------------------------------------------------------
+
+@color_brand:       #ff5500;
+@color_brand_alt:   #cefadf;
+@color_brand_dark:  #310520;
+
+
+//---------------------------------------------------------------------------------------------------------------------
+// Typography
+//----------------------------------------------------------------------------------------------------------------------
+
+@base_font-family: 'Inconsolata', arial, helvetica, sans-serif;
+
+.defaultFont(@font-style: normal; @font-weight: 400; @font-size: 1em; @line-height: 1.5em; @font-family: @base_font-family; @text-align: left; @color: #fff; @margin: 0; )
+{
+    font-style: @font-style;
+    font-weight: @font-weight;
+    font-size: @font-size;
+    line-height: @line-height;
+    font-family: @font-family;
+    text-align: @text-align;
+    color: @color;
+    margin: @margin;
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+// Core Breakpoints
+//----------------------------------------------------------------------------------------------------------------------
+
+@tiny:         	20em;   // 320px
+
+@below_small:   29.999em;
+@small:         30em;   // 480px
+
+@below_midi:    37.499em;
+@midi:        	37.5em; // 600px
+
+@below_medium:  47.999em;
+@medium:        48em; // 768px
+
+@below_large:   63.999em;
+@large:         64em; // 1024px
+
+@below_xlarge:  79.999em;
+@xlarge:        80em; //
+
+@below_max:     119.999em;
+@max:           120em; // 1440px
